@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello in Build stage'
-                sh 'python python_exe.py'
+                sh 'python3 python_exe.py'
               
             }
         }
