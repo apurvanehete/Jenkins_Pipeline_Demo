@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello in Build stage'
-                sh 'python3 Exe_2_python.py'
+                sh 'python3 Exe_1_python.py'
             }
         }
         stage('Test') {
