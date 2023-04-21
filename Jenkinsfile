@@ -9,7 +9,7 @@ pipeline
 		  {checkout([$class: 'GitSCM', branches: [[name: 'main']], extensions: [], userRemoteConfigs: [[credentialsId: '872f84d6-0500-4d2d-ab78-ea58896914e0', url: 'https://github.com/apurvanehete/Jenkins_Pipeline_Demo.git']]]) 
 		  } 
 		  else if (env.BRANCH_NAME == 'Python_Demo') 
-		  { checkout([$class: 'GitSCM', branches: [[name: 'Python_Demo']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], 				userRemoteConfigs: [[url: 'https://github.com/example/repo.git']]]) 
+		  { checkout([$class: 'GitSCM', branches: [[name: 'Python_Demo']], extensions: [], userRemoteConfigs: [[credentialsId: '872f84d6-0500-4d2d-ab78-ea58896914e0', url: 'https://github.com/apurvanehete/Jenkins_Pipeline_Demo.git']]]) 
 		  } 
 		} 
 	    } 
