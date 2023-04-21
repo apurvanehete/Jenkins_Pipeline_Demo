@@ -19,7 +19,7 @@ pipeline
 		  { if (env.BRANCH_NAME == 'main') 
 			{ sh 'python3 python_exe.py' }
 		    else if (env.BRANCH_NAME == 'Python_Demo') 
-			{ sh 'python Demo4.py' } } } } 
+			{ sh 'python3 Demo4.py' } } } } 
 	  stage('Test') 
 		{ steps { script 
 		  { if (env.BRANCH_NAME == 'main') 
